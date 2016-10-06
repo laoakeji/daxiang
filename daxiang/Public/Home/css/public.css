@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html{ height:100%}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { padding: 0; margin: 0; font-family: "微软雅黑"; color: #000; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, th, var { font-weight: normal; font-style: normal; }
+strong { font-style: normal; }
+/* ol, ul, li { list-style: none outside none; } */
+caption { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; }
+a { text-decoration: none; outline: none; color: #666; font-family: "微软雅黑"; font-size: 12px; }
+a:hover { text-decoration: none; }
+input,textarea,select { outline: none; resize:none;*outline:expression(this.hideFocus=true);
+}
+.wrap{ width:1200px; margin:0 auto;}
+img{ display:block; border:none;}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+border:none;
+padding:0;
+}
+.clear:after { visibility: hidden; display: block; font-size: 0; content: "1"; clear: both; height: 0; }
+.fLe {  _display: inline; }
+.fRi { float: right; _display: inline; margin:0 10px;}
+.clear { clear: both; }
+.sucai {
+    width: 358px;
+    height: 185px;
+    padding-right: 30px;
+    overflow: hidden;
+    margin: 0px auto;}
+	.sucai span{ font-size:14px;color:#ffffff;}
+.text{ width:82%; margin:20px auto;}
+.text h4{ color:#949494; font-size:24px; padding-bottom:20px; text-align:center;}
+.text b{ font-weight:normal; display:block;text-align:center; font-size:12px; color:#999;}
+.text p{ color:#949494; line-height:36px; font-size:14px;}
+.text img{ max-width:960px; margin:0 auto; padding:20px 0;}
+

@@ -1,0 +1,90 @@
+<include file="Index/detail_head" />
+
+<style>
+.dabiaotiss { font-family: "微软雅黑"; font-size: 53px; color: #fff; font-weight: bold; padding-top: 5%; text-align: center; width: 100%;margin-top: 30px; }
+</style>
+
+<!--内容-->
+<div class="neiye_banner" style="background:url(__PUBLIC__/Home/images/team_head.jpg) no-repeat center center;background-size: cover; width:100%; height:400px; position:relative;">
+<div class="clear"></div>
+<!--<div class="neiye_dabiaoti" style="width:280px;">团队与项目</div>-->
+<div class="dabiaotiss" style="color:#f6881b !important;">团队与项目</div>
+<!-- <div class="guanjiancicci">以人为本，服务社会，共建和谐，合作共赢</div> -->
+	<div class="neiye_navq">
+		<eq name="id" value="1">
+			<a href="{:U('Index/team')}?id=1" class="neiye_hover">入驻团队<span></span></a>
+		<else/>
+			<a href="{:U('Index/team')}?id=1">入驻团队<span></span></a>
+		</eq>
+		
+		<eq name="id" value="2">
+			<a href="{:U('Index/team')}?id=2" class="neiye_hover">孵化项目<span></span></a>
+		<else/>
+			<a href="{:U('Index/team')}?id=2">孵化项目<span></span></a>
+		</eq>
+		<div class="clear"></div>      
+    </div>
+</div>
+
+<div class="neiye_cen">
+<div class="clear"></div>
+<div class="shouye_guanyu_biaoti"> <em>
+<if condition="$id eq 1 ">
+入驻团队
+<else /> 
+入驻项目
+</if>
+</em><br>
+  <!-- <span>ABOUT US</span> -->
+</div>
+<style>
+	.shouye_qiehuan_xinwe .bd ul li.list:hover { background: #fff!important; }
+	.shouye_qiehuan_xinwe .bd ul li.list:hover a{ color: #252729!important; }
+	.pic-mixNewsStyleTitle {font-size: 14px;color: #5e5e5e;font-weight: bold;}
+</style>
+<div class="shouye_guanyu_xiangxi lin">
+	<div class="content" style="word-break:break-all;">
+	<style>li:hover a{color:#818284!important;}</style>
+	<div class="shouye_qiehuan_xinwe shouye_qiehuan_xinwe_neiye">
+	  <div class="bd">
+	    <ul class="picList">
+			<if condition="$id eq 1 ">
+			<table style="border-width: 0px; padding: 0px; margin: 0px; border-spacing: 0px; border-collapse: collapse;">
+				<volist name="list" id="vo">
+					<tr style="height:120px;">
+						<th align="left" valign="top" style="margin-top:20px;margin-left:5px;">
+							<div>
+								<a hidefocus="true" href="" target="_self"  mix="1" style="font-size: 18px;color: #5e5e5e;font-weight: bold;">{$i}、{$vo.desc}</a>
+							</div>
+							<div>
+								<p style="font-size: 12px;color: #797979;padding: 4px 0 0 0;overflow: hidden;text-overflow: ellipsis;">{$vo.content}</p>
+							</div>	
+						</th>
+					 </tr>
+				</volist>
+			</table>
+			<else />
+			<volist name="list" id="vo">
+			<li class="list">
+				<div class="pic"><a href="{:U('Home/Index/detail_team')}?id={$vo.id}"><img src="{$vo.image}"></a></div>
+				<div class="title">
+					<div class="xinwen_biaoti_shouye"><a href="" title="">{$vo.desc}</a></div>
+				</div>
+			</li>
+			</volist>
+			</if>
+			
+			
+			<!-- 
+					
+					 -->
+		</ul>
+	  </div>  
+	</div>
+	<div class="fenye">
+	</div>
+</div>
+</div>
+<!--内容-->
+
+<include file="Index/common_foot" />

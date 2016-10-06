@@ -1,0 +1,39 @@
+<include file="Index/detail_head" />
+<style>
+.dabiaotiss { font-family: "微软雅黑"; font-size: 53px; color: #fff; font-weight: bold; padding-top: 15%; text-align: center; width: 100%;margin-top: 30px; }
+</style>
+<!--内容-->
+<div class="neiye_banner" style="background:url(__PUBLIC__/Home/images/service_head.png) no-repeat center center;background-size: cover; width:100%; height:450px; position:relative;">
+<div class="clear"></div>
+
+<div class="dabiaotiss" style="color:#f6881b !important;">服务支持</div>
+<!-- <div class="guanjiancicci">以人为本，服务社会，共建和谐，合作共赢</div> -->
+	<div class="neiye_navq">
+		<eq name="id" value="4">
+			<a href="{:U('Index/service')}?id=4" class="neiye_hover">产业基金<span></span></a>
+		<else/>
+			<a href="{:U('Index/service')}?id=4">产业基金<span></span></a>
+		</eq>
+		
+		<eq name="id" value="5">
+			<a href="{:U('Index/service')}?id=5" class="neiye_hover">基础服务<span></span></a>
+		<else/>
+			<a href="{:U('Index/service')}?id=5">基础服务<span></span></a>
+		</eq>
+		<div class="clear"></div>      
+    </div>
+</div>
+<div class="neiye_cen">
+<div class="clear"></div>
+<div class="shouye_guanyu_biaoti"> <em>{$list.title}</em><br>
+  <!-- <span>ABOUT US</span> -->
+</div>
+<div class="shouye_guanyu_xiangxi lin">
+	<div class="content" style="word-break:break-all;">
+		{$list.content}
+    </div>
+</div>
+</div>
+<!--内容-->
+
+<include file="Index/common_foot" />

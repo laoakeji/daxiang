@@ -1,0 +1,64 @@
+﻿.form-banner {
+	background: url("../images/form-banner.jpg") center 0 no-repeat;
+	height: 628px;
+}
+
+.form-banner-top {
+	margin-top: 150px;
+	color: #ffffff;
+}
+
+.form-banner-dwon {
+	margin-bottom: 25px;
+	color: #ffffff;
+}
+
+.form-two {
+	margin-top: 30px;
+}
+
+.page-canter h2 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.page-canter p {
+	text-align: center;
+	line-height: 45px;
+	color: #5e5e5e;
+}
+
+.form-group textarea {
+	width: 100%;
+	border: 1px solid #ddd;
+	height: 160px;
+}
+
+.form-btn {
+	float: right;
+	border-radius: 0px;
+	position: relative;
+	margin-top: -42px;
+	padding: 10px 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+.container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container, .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
